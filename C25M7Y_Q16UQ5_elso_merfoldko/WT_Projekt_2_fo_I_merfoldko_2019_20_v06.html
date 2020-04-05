@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Webtervezés 2020 - I. mérföldkő</title>
+    <style>
+      body {
+        font-family: "Segoe UI",Arial,sans-serif;
+        background-color: #fcfcfc;
+        font-size:16px;
+        padding-bottom:50px;
+      }
+      table,td,th {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid #000000;
+        padding:5px;
+      }
+      table {
+        margin:10px;
+      }
+      td:first-child {
+        /*font-weight:bold;*/
+        vertical-align: top;
+      }
+      .stfill {
+        font-weight:bold;
+        color:black;
+      }
+      .sum {
+        border-top:2px solid #000000;
+      }
+      .sum td {
+        font-weight:bold;
+      }
+      .task {
+        /*font-weight:bold;*/
+      }
+      .subtask {
+        padding-left:25px;
+      }
+      .note {
+        font-size:12px;
+        display:block;
+      }
+      tr.sum>td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4) {
+        text-align: center;
+      }
+      tr.header {
+        border-bottom: 2px solid #000000;
+      }
+      .example {
+        font-style: italic;
+        color:grey;
+      }
+      .kotelezo{ 
+		  color:red; 
+		  font-weight: bold; 
+	   }
+    </style>
+  </head>
+  <body>
+    <h1>Web tervezés - 2 fős projekt <br />
+        I. mérföldkő követelmények</h1>
+    <div>
+      <h2>Általános elvárások</h2>
+      <ul>
+        <li>A mérföldkő elfogadásához 5 db html oldalt kell ekészíteni a választott témának megfelelően.
+            A projekt célja a HTML, CSS ismeretek bemutatása, ezért nem tartalmazhat program által generált elemeket.</li>
+        <li>Az elkészített feladatot egy zip fájlban kell feltölteni CooSpace-re a követelményekben megfogalmazott határidőig.</li>
+        <li>Kicsomagolás után a HTML fájlok böngészőben történő megnyitásával a használt útvonalaknak (css,kép) helyesnek kell lenniük.</li>
+        <li>A mérföldkő kötelező részét képezi a választott téma ismertetése. A továbbiakban az elkészített feladatoknak a választott témának kell megfelelniük.</li>
+        <li>A fenti elvárások a pontozásban "Formai követelmények" néven szerepelnek.</li>
+        <li>Csak működő, látható és értelmes formázások érnek pontot. Például nem ér pontot: fehér háttéren fehér szöveg, CSS animáció ami nem jelenik meg a weboldalon, a rossz útvonalak miatt nem működő/látható tartalom.</li>
+        <li>Az <span class="kotelezo">
+             1, 2, 3, 3.1, 3.2, 3.3., 4.1, 4.2, 4.3, 4.4, 5.1, 5.2 </span>
+             számozású követelmények teljesítése az elégséges érdemjegy megszerzéséhez kötelező, a projekt más részeivel ki nem váltható!</li>
+        <li>Az 5.3-as és 5.4-es követelményeknél fel kell sorolni a megvalósított elemeket. Az összes követelménynél (1, 2, 3, 3.1, 3.2, 3.3., 4.1, 4.2, 4.3, 4.4, 5.1, 5.2, 5.3, 5.4 felsorolt elemei) az egyes követelményeket linkké kell alakítani, melyek arra az oldalra navigálnak, ahol láthatóak.</li>
+        <li>Ezen dokumentumot kitöltve mellékelni kell a beadott zip fájlban.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>1. hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Nagy Noémi</span></li>
+        <li>Neptun-kód: <span class="stfill">C25M7Y</span></li>
+        <li>Szak, évfolyam: <span class="stfill">Gazdaságinformatika 2018/19</span></li>
+        <li>E-mail cím: <span class="stfill">nnaomi813@gmail.com</span></li>
+        <li>Használt szabvány: <span class="stfill">HTML5</span></li>
+      </ul>
+    </div>
+	<div>
+      <h2>2. hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Fehér Zsolt</span></li>
+        <li>Neptun-kód: <span class="stfill">Q16UQ5</span></li>
+        <li>Szak, évfolyam: <span class="stfill">Gazdaságinformatika 2018/19</span></li>
+        <li>E-mail cím: <span class="stfill">zsolf57@gmail.com</span></li>
+        <li>Használt szabvány: <span class="stfill">HTML5</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Választott téma</h2>
+      <h3>Kisállat örökbefogadó oldal</h3>
+      <p>A projekt egy vidrák örökbefogadására alkalmas felületet valósít meg. A weblapon lehetőség van az örökbefogadható kisállatok közötti böngészésre,<br>
+      azok örökbefogadására regisztrációt és bejelentkezést követően. A honlapon megtekinthetők az aktuális szolgáltatások, a szervezet csapatának, elérhetőségének megtekintésére.  </p>
+      <p>
+         <span class="stfill"> </span>
+      </p>
+      <p>
+        A projektnek kötelező jelleggel tartalmaznia kell felhasználókezelést. <br>
+        Kiemelt funkciók (legalább 3 darab a kötelezőkön kívül):
+      </p>
+      <ul>
+        <li><b>Felhasználó kezelés: regisztráció, belépés stb.</b></li>
+        <li><span class="stfill">Örökbefogadás: örökbefogadható állatok listázása, azok örökbefogadása, felhasználó által örökbefogadott állatok listázása</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pontozás</h2>
+      <p>
+        Ezt a részt az oktató tölti ki.
+      </p>
+      <table>
+        <tr class="header">
+          <th>
+            
+          </th>
+          <th>
+            Részfeladat
+          </th>
+          <th>
+            Szerezhető pontszám
+          </th>
+          <th>
+            Szerzett pontszám
+          </th>
+          <th>
+            Megjegyzés
+          </th>
+        </tr>
+        <tr class="kotelezo">
+          <td>1</td>
+          <td>
+            Formai követelmények
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>2</td>
+          <td class="task">
+            Szabványos HTML oldalak
+            <span class="note">A minimálisan kötelező 5 oldalnak szabványosnak kell lennie.</span>
+          </td>
+          <td>10</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>3</td>
+          <td class="task" colspan="4">
+            <a href="index.html">Menü megvalósítás</a>
+          </td>          
+        </tr>
+        <tr class="kotelezo">
+          <td>3.1</td>
+          <td class="subtask">
+            <a href="index.html">Linkek használata</a>
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>3.2</td>
+          <td class="subtask">
+            <a href="index.html">Lista használata</a>
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>3.3</td>
+          <td class="subtask">
+            <a href="base.css">CSS formázás</a>
+            <span class="note">- Az aktuális menüpont eltérő.</span>
+            <span class="note">- Az egér rávitelével a kinézet módosul.</span>
+          </td>
+          <td>4</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>4</td>
+          <td class="task" colspan="4">
+            A weboldal struktúrája
+          </td>
+        </tr>
+        <tr class="kotelezo">
+          <td>4.1</td>
+          <td class="subtask">
+            <a href="index.html">Div illetve HTML5 elemekkel van kialakítva</a>
+            <span class="note">Fejléc, lábléc, törzs, oldalsáv, menü.</span>
+            <span class="note">HTML5 esetén HTML5 elemek.</span>
+          </td>
+          <td>10</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>4.2</td>
+          <td class="subtask">
+            <a href="szolgaltatasok.html">Táblázat elemek szabályos használata</a>
+            <span class="note">Fejlécekhez való társítással (headers).</span>
+          </td>
+          <td>4</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>4.3</td>
+          <td class="subtask">
+            <a href="index.html">Űrlap elemek használata</a>
+            <span class="note">Legalább 4 féle beviteli mező.</span>
+            <span class="note">Label elemekkel.</span>
+          </td>
+          <td>8</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>4.4</td>
+          <td class="subtask">
+            <a href="index.html">Kép elem használata</a>
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>5</td>
+          <td class="task" colspan="4">
+            CSS
+          </td>
+        </tr>
+        <tr class="kotelezo">
+          <td>5.1</td>
+          <td class="subtask">
+            <a href="base.css">Elemkijelölő, azonosítókijelölő, <br>osztálykijelölő, összetett kijelölők használata</a>
+          </td>
+          <td>8</td><td></td><td></td>
+        </tr>
+        <tr class="kotelezo">
+          <td>5.2</td>
+          <td class="subtask">
+            <a href="adopt.html">Nyomtatási stíluslap</a>
+            <span class="note">Az 5 db HTML oldal egyikéhez elég elkészíteni <br>a stíluslapot az órán tanultaknak megfelelően.</span>
+          </td>
+          <td>4</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>5.3</td>
+          <td class="subtask">
+            <i>A weboldal struktúra elemeinek testreszabása</i>
+            <span class="note">Formázás, pozícionálás, méretezés, úsztatás</span>
+            <span class="note">Példák:</span>
+            <span class="note">- <a href="index.html">fix fejléc:</a> 4 pont</span>
+            <span class="note">- <a href="index.html">többoszlopos elrendezés</a>: 4 pont</span>
+            <span class="note">- lebegő doboz: 4 pont</span>            			
+            <span class="note">- <a href="index.html">z-index használata</a>: 4 pont</span>
+            <span class="note">- <a href="adopt.html">méretezés</a>: 2 pont</span>
+            <span class="note">- stb.</span>            			
+          </td>
+          <td>10</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>5.4</td>
+          <td class="subtask">
+            <i>Dizájn</i>
+            <span class="note">A korábbi részfeladatok teljesítéséhez használt <br>szabályokon felül.</span>
+            <span class="note">Szabadon használható:</span>
+            <span class="note">- pozícionálás: <a href="index.html">absolute</a>, <a href="index.html">fixed</a>, relative,  static típusonként 2 pont</span>
+            <span class="note">- <a href="index.html">úsztatás</a>: 2 pont</span>
+            <span class="note">- <a href="base.css">pseudo elemek</a>: 4 pont</span>
+            <span class="note">- <a href="adopt.html">lekerekített sarkok</a>: 4 pont</span>
+            <span class="note">- <a href="adopt.html">árnyékok</a>: 4 pont</span>
+            <span class="note">- <a href="index.html">áttűnés</a>: 4 pont</span>
+            <span class="note">- transzformálás: eltolás, forgatás, skálázás, nyírás típusonként 2 pont</span>
+            <span class="note">- <a href="adopt.html">animáció</a>: 4 pont</span>
+            <span class="note">- media query</span>
+            <span class="note">- stb.</span>
+          </td>
+          <td>24</td><td></td><td></td>
+        </tr>
+        <tr class="sum">
+          <td colspan="2">Összpontszám:</td>
+          <td>90</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Megjegyzés</h2>
+      <p>A hallgató opcionális megjegyzése a beadott feladathoz.</p>
+      <p class="stfill">
+      </p>
+    </div>
+    <p> Közzétéve: 2020. 03. 29. </p>
+  </body>
+</html>

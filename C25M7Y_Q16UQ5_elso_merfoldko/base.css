@@ -1,0 +1,409 @@
+/*NAGYON FONTOS: MARADJ OTTHON!!!!!!!!!!!!!*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Varela';
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*fancylink*/
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: #636366;
+}
+
+/*navbar */
+li, a, button {
+
+    font-family: 'Varela', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10%;
+    background-color: #f3f3f6;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 68;
+}
+
+/*gorgetes arnyeka*/
+.headArnyek {
+    border-radius: 2px;
+    box-shadow: 1px 7px 7px #e9e9e9;
+    transition: all 0.3s ease 0.3s;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* ilyen fancy átmenetes lesz a szöveg, ha ráviszed a kurzort */
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #636366;
+}
+
+
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(105, 179, 223);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(105, 179, 223);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(100, 199, 223, 0.8);
+}
+
+.activepage a {
+
+    font-weight: bolder;
+
+}
+
+/* sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #5499ff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+    z-index: 69;
+}
+
+.sidenav input[type=submit] {
+    padding: 9px 25px;
+    background-color: rgb(105, 179, 223);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+.sidenav input[type=submit]:hover {
+    background-color: rgba(100, 199, 223, 0.8);
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number] {
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus {
+    border: 3px solid #555;
+}
+
+.loginformd, .regformd {
+    transition: 0.7s;
+
+}
+
+.reglogin {
+    width: 100%;
+    border-radius: 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.reglogin:hover {
+
+    background-color: rgba(1, 50, 67, 1);
+    color: white;
+}
+
+.loginform #jelszo {
+    margin-bottom: 10px;
+}
+
+.sidenav form {
+    margin-left: 20px;
+}
+
+.loginform {
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+
+.regform {
+    margin-top: 20px;
+
+}
+
+.sidenav p {
+    font-size: medium;
+    font-weight: 700;
+}
+
+#rjelszoa {
+    margin-bottom: 20px;
+}
+
+#acceptcare {
+    float: left;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*tartalom*/
+
+.content {
+    margin-top: 130px;
+}
+
+h1 {
+    color: #06008a;
+    text-align: center;
+    font-weight: 900;
+}
+
+/*index.html css*/
+.rovidism {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 20px 500px 20px 400px;
+}
+
+.otterpic {
+    margin-right: 30px;
+}
+
+.eddigmentett {
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*index.html css END*/
+
+/*szolg.html css*/
+/*kekw*/
+
+/*ourteam.html css */
+
+.ourteam{
+    display: flex;
+    flex-direction: row;
+}
+
+.maradjotthon{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.gyorfikep img{
+    width: 400px;
+    height: 400px;
+}
+
+
+#vidrasim, #vethelp, #tanacs{
+    font-weight: normal;
+}
+
+h2{
+    color: #06008a;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.szolg{
+
+    border: 2px solid #06008a;
+    border-radius: 10px;
+    background-color: #aed3ff;
+
+    margin-top: 55px;
+
+    line-height: 27px;
+
+    margin-left: 400px;
+    margin-right: 400px;
+
+}
+
+
+
+.szolgaltatasok{
+    display: flex;
+    justify-content: center;
+}
+
+/* adopt.html */
+
+.adoptdesc p{
+    margin: 20px 400px 0px 400px;
+}
+
+.otterchamp{
+
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+
+    margin: 20px 600px 0px 600px;
+
+    background-color: crimson;
+
+}
+
+.otterchamp:hover{
+    animation-name: otterchampion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.vidrak-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vidrak{
+    display: flex;
+}
+
+.egyvidra{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 50px 15px 10%;
+    box-shadow: #cbcbcb 7px 7px 7px;
+    padding: 5px 5px 5px 5px;
+    border: #babcce solid 1px;
+}
+.vidradesc{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+
+.vidradesc ul{
+    list-style: none;
+}
+
+.vidradesc > img{
+    width: 120px;
+    height: 180px;
+}
+
+/*footer*/
+
+footer {
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: #3060f6;
+    width: 100%;
+
+}
+
+footer > div {
+    padding: 5px;
+}
+
+
+.footer_nav li {
+    padding: 0px 20px;
+    display: inline-block;
+    list-style: none;
+
+}
+
+
+.footer_links li {
+    padding: 0px 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+.footer_szoveg {
+    text-align: center;
+    font-weight: 900;
+}
+
+.footer_cont > div {
+    display: inline-block;
+    font-style: italic;
+}
+
+.footer_copyright {
+    background-color: #0f37b4;
+    text-align: center;
+    font-size: 10px;
+}

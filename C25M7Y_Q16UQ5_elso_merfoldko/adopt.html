@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Örökbefogadás</title>
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <!-- font import -->
+    <link href="https://fonts.googleapis.com/css?family=Varela&display=swap" rel="stylesheet">
+    <!-- icon import -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- jquery import -->
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <!-- otterchampion animacio yaaaay -->
+    <style>
+        @keyframes otterchampion {
+
+            0% {
+                background-color: crimson;
+            }
+            20% {
+                background-color: #fffc73;
+            }
+            40% {
+                background-color: #ff006e;
+            }
+            60% {
+                background-color: tomato;
+            }
+            80% {
+                background-color: #69d33d;
+            }
+            100% {
+                background-color: #0d56ee;
+            }
+        }
+
+        @media print {
+
+            .adoptdesc p{
+                margin: 0px 0px 0px 0px;
+            }
+
+
+            .egyvidra{
+                box-shadow: none;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+<!-- nav-bar START -->
+
+<header id="hedor">
+    <img class="logo" src="pics/owotter.png" alt="thats an otter logo" style="width: 85px;height: 85px">
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+            <li class="activepage"><a href="adopt.html">Örökbefogadás</a></li>
+            <li><a href="contact.html">Elérhetőség</a></li>
+        </ul>
+    </nav>
+    <button class="btn" onclick="openNav()">Bejelentkezés</button>
+</header>
+<!-- nav-bar END -->
+
+<!-- SIDENAV -->
+<div id="sideNav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
+    <button class="reglogin" onclick="showlogin() ">Jelentkezz be</button>
+    <br>
+
+    <div class="loginformd" id="loginform">
+        <form class="loginform">
+
+            <label for="felhnev">Felhasználónév:</label>
+            <br>
+            <input type="text" id="felhnev" name="felhnev">
+            <br>
+            <label for="jelszo">Jelszó:</label>
+            <br>
+            <input type="password" id="jelszo" name="jelszo">
+            <br>
+            <input type="submit" value="Bejelentkezés">
+            <br>
+        </form>
+    </div>
+    <p id="regp" style="font-weight: unset; font-size: 10px">vagy ha még nem vagy regisztrált tagunk</p><br>
+
+    <button class="reglogin" onclick="showReg() ">Regisztrálj</button>
+    <br>
+    <div class="regformd" id="regform" hidden>
+        <form class="regform">
+
+            <label for="rfelhnev">Felhasználónév:</label><br>
+            <input type="text" id="rfelhnev" name="rfelhnev"><br>
+
+            <label for="teljesnev">Teljes név:</label><br>
+            <input type="text" id="teljesnev" name="teljesnev"><br>
+
+            <label for="email">E-mail cím:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="rvheart">Hány aranyos vidrának van hely a szívedben?</label><br>
+            <input type="number" id="rvheart" name="rvheart"><br>
+
+            <label for="rjelszo">Jelszó:</label><br>
+            <input type="password" id="rjelszo" name="rjelszo"><br>
+
+            <label for="rjelszoa">Jelszó mégegyszer:</label><br>
+            <input type="password" id="rjelszoa" name="rjelszoa"><br>
+
+
+            <input type="checkbox" id="acceptcare" name="acceptcare">
+            <p>A gomb megnyomásával nyilatkozol, hogy a vidrák házi körülmények között tartásáról mindent tudsz, így
+                biztonságban,egészségben lesznek nálad a kis nyunyók.
+                Ha nem vagy biztos a tudásodban, ajánlom <a href="https://pethelpful.com/exotic-pets/pet-otter">ezt</a>
+                a cikket alapos átolvasásra.</p><br>
+
+
+            <input type="submit" value="Regisztráció">
+        </form>
+    </div>
+
+</div>
+
+<!-- SIDENAV END-->
+
+<!-- tartalom START -->
+
+<div class="content">
+    <h2>Üdvözlünk az örökbefogadás oldalán!</h2>
+    <div class="adoptdesc"><p>A nevétől eltérően ez az oldal nem azért lett létrehozva, hogy mindenféle vidrákat vihess
+        haza, hanem hogy különböző helyekről ki tudj menekíteni állatokat. Mivel az állatok különböző helyeken
+        vannak bezárva, így mindenhonnan más-más áron tudjuk őket kiszabadítani.
+        Örökbefogadni csak regisztrált felhasználók tudnak, így ha te is tenni akarsz egy kicsit az állatokért valamint
+        a webterv beadandó ötösünkért, akkor (mondjuk még ne, mert nincs kész a php mögötte) regisztrálj és te lehetsz
+        az </p><br>
+        <div class="otterchamp">OTTER CHAMPION</div>
+        <br>
+        <p class="adoptdesc">\(๑❛ᴗ❛๑)/ </p>
+        <br>
+
+        <h3  style="margin-bottom: 20px; text-align: center"> Most örökbefogadható vidrák:</h3>
+    </div>
+
+    <div class="vidrak-container">
+        <div class="vidrak">
+            <div class="egyvidra">
+                <div class="vidradesc">
+                    <img src="pics/adoptter-1.png" alt="otter1">
+                    <ul>
+                        <li>Név: Lili</li>
+                        <li>Honnan: Irinyi kabinet</li>
+                        <li>Cukiságfaktor: 300</li>
+                        <li>Ár: 3000 Ft</li>
+                    </ul>
+                </div>
+                <button class="orokbefogadom">Örökbefogadom</button>
+            </div>
+            <div class="egyvidra">
+                <div class="vidradesc">
+                    <img src="pics/adoptter-2.png" alt="otter2">
+                    <ul>
+                        <li>Név: Poki</li>
+                        <li>Honnan: Pokélabda</li>
+                        <li>Cukiságfaktor: 500</li>
+                        <li>Ár: 2000 Ft</li>
+                    </ul>
+                </div>
+                <button class="orokbefogadom">Örökbefogadom</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--tartalom END -->
+
+
+<!-- footer START -->
+<footer>
+    <div class="footer_nav">
+        <ul class="fnav_links">
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="https://www.nationalgeographic.com/animals/mammals/group/otters/" target="_blank">Blog</a></li>
+            <li><a href="adopt.html">Örökbefogadás</a></li>
+            <li><a href="ourteam.html">Csapatunk</a></li>
+        </ul>
+    </div>
+
+    <div class="footer_links">
+        <ul>
+            <li><a href="https://www.facebook.com/OtterLovers/posts/2094566290586405" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.youtube.com/watch?v=1xf2VVB7boI" target="_blank"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://www.google.com/search?q=sleepy+otter&tbm=isch&hl=hu&ved=2ahUKEwjHwO6j2rjoAhUZkaQKHR4BCxYQBXoECAEQJg&biw=1583&bih=786#imgrc=HmjFGcwiEUIHEM"
+                   target="_blank"><i class="fab fa-google"></i></a></li>
+            <li><a href="https://www.instagram.com/cutest.otters/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.reddit.com/r/Otters/" target="_blank"><i class="fab fa-reddit"></i></a></li>
+        </ul>
+
+
+    </div>
+
+    <div class="footer_szoveg">
+        <div>OTTERS</div>
+        <div>YES, WE LOVE OTTERS</div>
+    </div>
+
+    <div class="footer_cont">
+        <div><img src="pics/contact_phone.svg" style="height: 20px; width: 20px" alt="phone"> (30) 7565042</div>
+        <div><img src="pics/contact_email.svg" style="height: 20px; width: 20px" alt="email"> info@ottermail.uwu</div>
+        <div><img src="pics/contact_home.svg" style="height: 20px; width: 20px" alt="ház">OTT ER. STR 15</div>
+
+    </div>
+
+
+</footer>
+<div class="footer_copyright">
+    ©OPY®ÁJT KURZI ÉS NEOMI
+</div>
+
+<!-- footer END -->
+<!-- scriptek -->
+
+
+<script>
+    //sidenav script
+    function openNav() {
+        document.getElementById("sideNav").style.width = "300px";
+    }
+
+    function closeNav() {
+        document.getElementById("sideNav").style.width = "0px";
+
+    }
+
+    // Nav shadow script
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 1) {
+            $('#hedor').addClass('headArnyek');
+        } else {
+            $('#hedor').removeClass('headArnyek');
+        }
+    });
+
+    //reg/login script
+    function showReg() {
+        document.getElementById("loginform").style.display = "none";
+        document.getElementById("regform").style.display = "inline";
+        document.getElementById("regp").style.display = "none";
+    }
+
+    function showlogin() {
+        document.getElementById("loginform").style.display = "inline";
+        document.getElementById("regform").style.display = "none";
+        document.getElementById("regp").style.display = "inline";
+
+    }
+</script>
+</body>
+</html>

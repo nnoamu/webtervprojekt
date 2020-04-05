@@ -1,0 +1,2 @@
+a:5:{s:8:"username";s:5:"Naomi";s:9:"teljesnev";s:15:"Naomi Sárkány";s:5:"email";s:21:"naomi.virag@gmail.com";s:7:"rvheart";s:2:"99";s:8:"password";s:7:"babagaj";}
+a:5:{s:8:"username";s:5:"Kruwu";s:9:"teljesnev";s:11:"White Kruzi";s:5:"email";s:18:"kruzor19@gmail.com";s:7:"rvheart";s:2:"69";s:8:"password";s:11:"leccimukodj";}
